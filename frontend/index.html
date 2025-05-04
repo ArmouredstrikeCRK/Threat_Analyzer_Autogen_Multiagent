@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Threat Detection UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center p-8">
+  <h1 class="text-3xl font-bold mb-6">🔍 Threat Detection from Image</h1>
+  <form id="uploadForm" class="bg-gray-800 p-4 rounded-xl shadow-lg">
+    <input type="file" name="file" id="file" class="mb-4 text-white" required />
+    <button type="submit" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Analyze</button>
+  </form>
+  <div id="result" class="mt-8 p-4 bg-gray-700 rounded-xl w-full max-w-2xl hidden">
+    <h2 class="text-xl font-bold">📄 Image Description:</h2>
+    <p id="description" class="mt-2 text-lg"></p>
+    <h2 class="text-xl font-bold mt-4">🚨 Threat Level:</h2>
+    <p id="threat" class="mt-2 text-lg text-red-400 font-bold"></p>
+  </div>
+
+  <script>
+    document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fileInput = document.getElementById("file");
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      const response = await fetch("http://localhost:8000/analyze/", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+      document.getElementById("result").style.display = "block";
+      document.getElementById("description").innerText = result.description;
+      document.getElementById("threat").innerText = result.threat_level;
+    });
+  </script>
+</body>
+</html>

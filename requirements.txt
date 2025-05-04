@@ -1,0 +1,24 @@
+fastapi
+uvicorn
+python-multipart
+aiofiles
+requests
+pillow
+autogenstudio
+torch
+transformers
+autogen-ext[ollama]
+
+
+# Optional: for advanced file management, debugging
+watchfiles
+
+# If you're using AutoGen in your pipeline
+autogenstudio
+
+# If image captioning uses Hugging Face models or torch
+torch
+transformers
+
+# If you're using OpenAI/LLMs locally or remotely
+openai

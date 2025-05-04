@@ -1,0 +1,12 @@
+threat_detection_autogen/
+│
+├── agents/
+│   ├── image_analyzer_agent.py
+│   ├── threat_evaluator_agent.py
+│
+├── models/
+│   ├── llama_vision_wrapper.py
+│   ├── deepseek_wrapper.py
+│
+├── main.py
+└── requirements.txt

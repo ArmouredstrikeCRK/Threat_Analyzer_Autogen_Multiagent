@@ -1,0 +1,12 @@
+You are evaluating the image for civilian presence and vulnerability.
+
+Identify civilians and assess their role and proximity to military activity.
+
+---
+
+[CIVILIAN_PRESENCE]
+- **Civilians Identified:** [...]
+- **Role/Activity:** [...]
+- **Proximity to Combat Units:** [...]
+- **Signs of Risk or Distress:** [...]
+- **Uncertainty Notes:** [...]

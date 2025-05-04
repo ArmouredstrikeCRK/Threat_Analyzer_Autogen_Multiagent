@@ -1,0 +1,22 @@
+# worker/Dockerfile
+
+FROM python:3.11-slim
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# System dependencies for image handling and HTTP requests
+RUN apt-get update && apt-get install -y \
+    curl git libglib2.0-0 libsm6 libxrender1 libxext6 \
+ && pip install --no-cache-dir fastapi uvicorn pillow requests
+
+WORKDIR /app
+
+# Copy only the files needed
+COPY worker_api.py    /app/worker_api.py
+COPY models/llama_vision_wrapper.py /app/models/llama_vision_wrapper.py
+
+# Expose the FastAPI port
+EXPOSE 8000
+
+# Start the FastAPI app
+CMD ["uvicorn", "worker_api:app", "--host", "0.0.0.0", "--port", "8000"]

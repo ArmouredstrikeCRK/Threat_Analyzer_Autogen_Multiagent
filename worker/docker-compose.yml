@@ -1,0 +1,23 @@
+# worker/docker-compose.yml
+
+services:
+  vision-worker-1:
+    build:
+      context: ..
+      dockerfile: worker/Dockerfile
+    ports:
+      - "8001:8000"
+
+  vision-worker-2:
+    build:
+      context: ..
+      dockerfile: worker/Dockerfile
+    ports:
+      - "8002:8000"
+
+  vision-worker-3:
+    build:
+      context: ..
+      dockerfile: worker/Dockerfile
+    ports:
+      - "8003:8000"
