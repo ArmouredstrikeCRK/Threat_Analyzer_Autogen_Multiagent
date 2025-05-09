@@ -1,0 +1,33 @@
+Image Name,Threat Level,threat_level_model,mismatch,Prediction Result
+coba_train_bg (47),1,0,True,Higher
+Non_Threat,0,1,True,Lower
+coba_train (4795),0,0,False,Correct
+coba_train (3816),0,0,False,Correct
+coba_train (2817),0,2,True,Lower
+coba_train (4487),4,3,True,Higher
+coba_train_bg (27),0,0,False,Correct
+coba_train (1559),1,0,True,Higher
+coba_train (474),1,0,True,Higher
+coba_train (3543),1,0,True,Higher
+coba_train (4910),0,0,False,Correct
+coba_train (633),0,0,False,Correct
+coba_train (5662),0,0,True,Correct
+coba_train (4383),0,0,True,Correct
+coba_train (2187),0,1,True,Lower
+coba_train (4928),0,0,True,Correct
+coba_train_bg (34),0,0,False,Correct
+coba_train (6000),0,0,False,Correct
+Midium_Threat,2,2,False,Correct
+Test_Image_Semi_Threat,2,2,False,Correct
+coba_train (1634),0,0,False,Correct
+coba_train (2799),1,0,True,Higher
+coba_train (1603),0,0,False,Correct
+coba_train (5601),0,0,False,Correct
+coba_train (4021),2,0,True,Higher
+coba_train_bg (12),0,0,False,Correct
+coba_train (3183),1,1,False,Correct
+coba_train (5344),1,0,True,Higher
+coba_train (3510),1,0,True,Higher
+coba_train (1146),0,0,False,Correct
+coba_train_bg (33),0,0,True,Correct
+coba_train (4958),0,0,True,Correct
