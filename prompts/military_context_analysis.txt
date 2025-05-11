@@ -10,3 +10,4 @@ Your task is to assess the operational and environmental context of the image. D
 - **Training indicators:** [Orange barrel tips, blank adatpors,simulation sensors]
 - **Operational Status:** [Active/Idle/Training/Patrolling]
 - **Supporting Notes:** [Any contextual indicators or observations]
+- **Military/War or Non Military/war:** [Ansewer yes/no, if the image has military context or no military context]
