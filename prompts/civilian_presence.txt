@@ -6,6 +6,7 @@ Identify civilians and assess their role and proximity to military activity.
 
 [CIVILIAN_PRESENCE]
 - **Civilians Identified:** [...]
+- **Animals/Pets:** [...]
 - **Role/Activity:** [...]
 - **Proximity to Combat Units:** [...]
 - **Signs of Risk or Distress:** [...]

@@ -31,7 +31,7 @@ def main():
             # service expects the image under "file"
             files = {'file': (fname, img_file, 'application/octet-stream')}
             try:
-                resp = requests.post(URL, files=files)
+                resp = requests.post(URL, files=files,)
                 resp.raise_for_status()
             except requests.RequestException as e:
                 print(f"[ERROR] {fname}: {e}")
