@@ -56,8 +56,6 @@ The system leverages:
     ```bash
     uvicorn main:app --reload
     ```
-5. Access the API documentation at:
-    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## Usage
 
@@ -80,41 +78,8 @@ curl -X POST "http://127.0.0.1:8000/analyze_image_agent" \
 - **Description**: Upload an image and get the predicted threat level.
 - **Parameters**:
   - `file`: The image file to analyze.
-  - `request_type`: The type of request (e.g., classification).
-  - `additional_param`: Optional additional parameter.
-
-## Folder Structure
-```
-Threat_Analyzer_Autogen_Multiagent/
-├── app/
-│   ├── main.py
-│   ├── models/
-│   ├── utils/
-│   └── ...
-├── data/
-├── tests/
-├── requirements.txt
-└── README.md
-```
-
-## Technologies Used
-
-### Backend:
-- **FastAPI** - For building the REST API.
-- **Pillow** - For image processing.
-
-### Machine Learning:
-- **scikit-learn** - For training and using classifiers.
-- **PyTorch** - For embedding extraction and deep learning models.
-- **XGBoost** - For Gradient Boosting.
-
-### Text Embeddings:
-- **BERT** - For extracting text embeddings.
-
-### Other Tools:
-- **Uvicorn** - ASGI server for FastAPI.
-- **Joblib** - For saving and loading models.
-
+  - `request_type`: The type of request (vision_analysis or threat_analysis).
+    
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
