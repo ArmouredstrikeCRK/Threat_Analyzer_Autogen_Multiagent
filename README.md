@@ -73,17 +73,6 @@ curl -X POST "http://127.0.0.1:8000/analyze_image_agent" \
 -F "request_type=classification"
 ```
 
-#### Example Response:
-```json
-{
-  "threat_level": "High",
-  "details": {
-     "confidence": 0.92,
-     "model_used": "Gradient Boosting"
-  }
-}
-```
-
 ## Endpoints
 
 ### 1. `/analyze_image_agent`
